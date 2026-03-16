@@ -9,12 +9,8 @@ import lombok.Setter;
 @NoArgsConstructor
 public class CorporateClient extends Client {
 
-    /** Razon social */
     private String businessName;
-    /** NIT */
     private String nit;
-    /** Representante legal */
     private String legalRepresentative;
-    /** Nombre de usuario */
     private String username;
 }

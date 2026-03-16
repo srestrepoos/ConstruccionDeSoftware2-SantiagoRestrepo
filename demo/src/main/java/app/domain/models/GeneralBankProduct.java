@@ -9,12 +9,8 @@ import lombok.Setter;
 @NoArgsConstructor
 public class GeneralBankProduct {
 
-    /** Codigo del producto */
     private String productCode;
-    /** Nombre del producto */
     private String productName;
-    /** Categoria */
-    private String category;
-    /** Requiere aprobacion */
+    private Category category;
     private boolean requiresApproval;
 }
