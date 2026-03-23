@@ -35,13 +35,15 @@ Ninguna penalización aplicable.
 
 ## Bonus
 
-| Bonus | Puntos |
+| Bonus | % |
 |---|---|
-| Nombres claros y consistentes en inglés (convención camelCase y PascalCase seguida) | +1 |
+| Nombres claros y consistentes en inglés (convención camelCase y PascalCase seguida) | +1% |
+
+> Nota con bonus = 3.30 × 1.01 = **3.33 → 3.3**
 
 ---
 
-## Nota Final: **4.3 / 5.0**
+## Nota Final: **3.3 / 5.0**
 
 ---
 
