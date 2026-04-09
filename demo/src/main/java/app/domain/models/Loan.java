@@ -4,8 +4,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.sql.Date;
-
+import java.math.BigDecimal;
+import java.time.LocalDate;
 @Getter
 @Setter
 @NoArgsConstructor
@@ -13,13 +13,22 @@ public class Loan {
 
     private long loanId;
     private LoanType loanType;
-    private String requestingClientId;
-    private double requestedAmount;
-    private double approvedAmount;
-    private double interestRate;
+    private Client requestingClient;
+    private BigDecimal requestedAmount;
+    private BigDecimal approvedAmount;
+    private BigDecimal interestRate;
     private int termMonths;
     private LoanStatus loanStatus;
-    private Date approvalDate;
-    private Date disbursementDate;
+    private LocalDate approvalDate;
+    private LocalDate disbursementDate;
     private String disbursementTargetAccount;
+
+    public void approve() {
+        this.loanStatus = LoanStatus.APPROVED;
+        this.approvalDate = LocalDate.now();
+    }
+
+    public void reject() {
+        this.loanStatus = LoanStatus.REJECTED;
+    }
 }
