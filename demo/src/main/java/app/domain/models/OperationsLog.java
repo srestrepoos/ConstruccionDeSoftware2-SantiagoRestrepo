@@ -4,8 +4,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.sql.Timestamp;
-
+import java.time.LocalDateTime;
+import java.util.Map;
 @Getter
 @Setter
 @NoArgsConstructor
@@ -13,9 +13,9 @@ public class OperationsLog {
 
     private String logId;
     private String operationType;
-    private Timestamp operationDateTime;
+    private LocalDateTime operationDateTime;
     private long userId;
-    private String userRole;
+    private SystemRole userRole;
     private String affectedProductId;
-    private DetailData detailData;
+    private Map<String, Object> detailData;
 }
