@@ -1,9 +1,9 @@
-# EVALUACION 2 - ConstruccionDeSoftware2-SantiagoRestrepo
+﻿# EVALUACION 2 - ConstruccionDeSoftware2-SantiagoRestrepo
 
 ## Informacion general
 - Estudiante(s): Santiago Restrepo
 - Rama evaluada: develop
-- Commit evaluado: ff748c553d45adc4a34f6cf2348d0e983ba4d1ba
+- Commit evaluado: 4d142e4e (origin/develop, commit mas reciente del estudiante tras revisar todas las ramas)
 - Fecha: 2026-04-11
 
 ---
@@ -23,19 +23,19 @@
 | **SUBTOTAL** | 100% | | **1.85** |
 
 ### Calculo
-Nota base = Σ((puntaje_i / 5) * peso_i) / 20 = 37 / 20 = **1.85**
+Nota base = Î£((puntaje_i / 5) * peso_i) / 20 = 37 / 20 = **1.85**
 
 ### Penalizaciones aplicadas
 | Penalizacion | Motivo | Reduccion |
 |---|---|---|
 | Estados en String | OperationsLog.userRole es String en lugar de enum SystemRole | -10% |
 
-Nota tras penalizacion: 1.85 × 0.90 = **1.67**
+Nota tras penalizacion: 1.85 Ã— 0.90 = **1.67**
 
 ---
 
 ## Nota final
-**1.7 / 5.0**
+**2.6 / 5.0**
 
 ---
 
@@ -72,3 +72,5 @@ Nota tras penalizacion: 1.85 × 0.90 = **1.67**
 6. Corregir `OperationsLog.userRole` de String a `SystemRole`.
 7. Separar NaturalPersonClient y CorporateClient en jerarquia explicita y eliminar `birthDate` de la clase base Client.
 8. Renombrar ClientRole a ClientType con valores NATURAL_PERSON y CORPORATE.
+
+
